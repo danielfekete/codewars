@@ -5,4 +5,6 @@ function spinWords(str) {
     .split(" ")
     .map((el) => (el.length >= 5 ? el.split("").reverse().join("") : el))
     .join(" ");
+
+  //return str.replace(/\w{5,}/g, (w) => w.split("").reverse().join(""));
 }
